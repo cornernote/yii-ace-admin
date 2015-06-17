@@ -27,8 +27,10 @@ class AceAsset extends CWidget
         $baseUrl = Yii::app()->assetManager->publish(Yii::getPathOfAlias('vendor') . '/cornernote/ace-admin-theme/assets', true, -1, YII_DEBUG);
         $cs = Yii::app()->getClientScript();
 
+        $cs->registerCSSFile($baseUrl . '/fonts/fonts.googleapis.com.css');
         $cs->registerCSSFile($baseUrl . '/css/ace.min.css', 'screen, projection');
-        $cs->registerScriptFile($baseUrl . '/js/ace.min.js', CClientScript::POS_HEAD);
+        $cs->registerScriptFile($baseUrl . '/js/ace-extra.min.js', CClientScript::POS_HEAD);
+        $cs->registerScriptFile($baseUrl . '/js/ace.min.js');
     }
 
 }

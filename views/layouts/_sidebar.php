@@ -7,7 +7,7 @@ $controller = Yii::app()->controller;
 ?>
 
 <?php if (!Yii::app()->user->isGuest): ?>
-    <div id="sidebar" class="sidebar responsive">
+    <div id="sidebar" class="sidebar sidebar-fixed responsive">
         <div class="sidebar-shortcuts" id="sidebar-shortcuts">
             <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
                 <?php echo CHtml::link('<i class="ace-icon fa fa-plus"></i>', array('/'), array('class' => 'btn btn-success')); ?>
@@ -53,6 +53,13 @@ $controller = Yii::app()->controller;
                     </li>
                 </ul>
             </li>
+
+            <?php
+            //$this->widget('ace.widgets.AceSidebarMenu', array(
+            //    'items' => MenuItem::model()->findByPk(1)->getItems($depthLimit),
+            //));
+            ?>
+
 
         </ul>
         <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">

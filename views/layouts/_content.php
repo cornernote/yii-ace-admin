@@ -7,7 +7,7 @@
 
 <div class="main-content">
     <?php if (isset($this->breadcrumbs)) { ?>
-        <div class="breadcrumbs">
+        <div class="breadcrumbs breadcrumbs-fixed">
             <?php echo TbHtml::breadcrumbs($this->breadcrumbs); ?>
         </div>
     <?php } ?>

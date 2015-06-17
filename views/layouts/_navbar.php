@@ -4,7 +4,7 @@
  */
 ?>
 
-<div id="navbar" class="navbar navbar-default">
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
 
     <div class="navbar-container" id="navbar-container">
         <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
@@ -22,8 +22,35 @@
             </a>
         </div>
 
-        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+        <?php /* ?>
+        <div class="navbar-buttons navbar-header pull-left" role="navigation">
             <ul class="nav ace-nav">
+                <li class="grey">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0);">
+                        Products
+                    </a>
+                    <ul class="dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                        <li class="dropdown-header">
+                            <i class="ace-icon fa fa-check"></i>
+                            4 Tasks to complete
+                        </li>
+
+                        <li class="dropdown-content">
+                            <?php $this->widget('zii.widgets.CMenu', array(
+                                'items' => MenuItem::model()->findByPk(1)->getItems($depthLimit),
+                                'htmlOptions' => array('class' => 'dropdown-menu dropdown-navbar'),
+                            )); ?>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <?php */ ?>
+
+        <div class="navbar-buttons navbar-header pull-right" role="navigation">
+
+            <ul class="nav ace-nav">
+
                 <li class="light-blue">
 
                     <?php if (!Yii::app()->user->isGuest) { ?>
@@ -48,6 +75,7 @@
 
                 </li>
             </ul>
+
         </div>
     </div>
 </div>

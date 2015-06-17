@@ -1,0 +1,6 @@
+{
+    "name": "cornernote/yii-ace-admin",
+    "require": {
+        "cornernote/ace-admin-theme": "dev-master"
+    }
+}

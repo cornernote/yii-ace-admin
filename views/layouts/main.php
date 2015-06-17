@@ -22,7 +22,7 @@ $this->widget('ace.widgets.AceAsset');
     <title><?php echo CHtml::encode($this->pageTitle . ' :: ' . Yii::app()->name); ?></title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 </head>
-<body class="no-skin">
+<body id="top" class="no-skin <?php echo $this->id . '-' . $this->action->id; ?>">
 
 <?php $this->renderPartial($viewNavbar); ?>
 

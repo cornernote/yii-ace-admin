@@ -15,7 +15,7 @@ class AceSidebarMenu extends CMenu
     public $encodeLabel = false;
     public $activateParents = true;
     public $openCssClass = 'open';
-
+    public $route;
 
     public function init()
     {
@@ -85,5 +85,12 @@ class AceSidebarMenu extends CMenu
             echo CHtml::closeTag('li') . "\n";
         }
     }
+
+    protected function normalizeItems($items, $route, &$active)
+    {
+        $route = $this->route ? $this->route : $route;
+        return parent::normalizeItems($items, $route, $active);
+    }
+
 
 }

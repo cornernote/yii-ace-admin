@@ -1,8 +1,7 @@
 {
     "name": "cornernote/yii-ace-admin",
     "require": {
-        "cornernote/ace": "*",
-        "crisu83/yiistrap": "*",
-        "bower-asset/cornernote-ace": "*"
+        "bower-asset/cornernote-ace": "*",
+        "crisu83/yiistrap": "*"
     }
 }

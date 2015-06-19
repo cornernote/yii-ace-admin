@@ -55,7 +55,7 @@
 
                     <?php if (!Yii::app()->user->isGuest) { ?>
                         <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                            <img src="http://www.gravatar.com/avatar/<?php echo md5(Yii::app()->user->user->email); ?>" alt="<?php echo Yii::app()->user->user->username; ?>" class="nav-user-photo" width="40" height="40">
+                            <img src="//www.gravatar.com/avatar/<?php echo md5(Yii::app()->user->user->email); ?>?d=wavatar" alt="<?php echo Yii::app()->user->user->username; ?>" class="nav-user-photo" width="40" height="40">
                             <span class="user-info">
 								<small>Welcome,</small> <?= Yii::app()->user->user->username ?>
     						</span>

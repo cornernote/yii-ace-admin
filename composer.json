@@ -2,6 +2,6 @@
     "name": "cornernote/yii-ace-admin",
     "require": {
         "bower-asset/cornernote-ace": "~1.0",
-        "crisu83/yiistrap": "~2.0"
+        "crisu83/yiistrap": "~1.3"
     }
 }
